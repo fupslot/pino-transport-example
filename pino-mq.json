@@ -1,0 +1,12 @@
+{
+ "type": "RABBITMQ",
+ "uri": "amqp://guest:guest@localhost/",
+ "exchange": "pino-logs-ex",
+ "queue": "",
+ "queuePattern": "pino-mq-",
+ "queueMap": {
+   "default": "pino-mq-default",
+   "info": "infoMessages"
+ },
+ "fields": ["id", "level"]
+}
