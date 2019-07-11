@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "amqplib": "^0.5.3",
+    "faker": "^4.1.0",
     "pino-mq": "^1.0.1",
     "pump": "^3.0.0",
     "split2": "^3.1.1",

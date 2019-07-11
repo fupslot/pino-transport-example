@@ -8,5 +8,5 @@
    "default": "pino-mq-default",
    "info": "infoMessages"
  },
- "fields": ["id", "level"]
+ "fields": ["id", "level", "email", "timestamp"]
 }

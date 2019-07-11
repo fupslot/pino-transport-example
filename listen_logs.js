@@ -13,7 +13,7 @@ amqp.connect('amqp://guest:guest@localhost:5672/', function(err, conn) {
   conn.createChannel(function(err, ch) {
     var ex = 'pino-logs-ex';
 
-    ch.assertExchange(ex, 'topic', {durable: false});
+    ch.assertExchange(ex, 'topic', {durable: true});
 
     ch.assertQueue('', {exclusive: true}, function(err, q) {
       console.log(' [*] Waiting for logs. To exit press CTRL+C');
